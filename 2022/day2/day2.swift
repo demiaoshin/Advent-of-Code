@@ -15,11 +15,8 @@ let fileURL = URL(fileURLWithPath: path)
 // store file data into result
 result = try String(contentsOf: fileURL, encoding: .utf8)
 
-// get each elve
+// get each value
 let values = result.components(separatedBy: "\n\n")
-
-// store round score here
-var totalElves = [Int]()
 
 // get each round in its own string
 let rounds = values[0].components(separatedBy: "\n")
