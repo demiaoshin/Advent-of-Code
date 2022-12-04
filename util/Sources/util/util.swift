@@ -45,7 +45,7 @@ public func getSampleIntInput(path: String) -> [Int] {
     do {
         let result = try String(contentsOf:  URL(fileURLWithPath: path), encoding: .utf8)
         let rows = result.components(separatedBy: "\n\n")
-        var strvalues = rows[0].components(separatedBy: "\n")
+        let strvalues = rows[0].components(separatedBy: "\n")
         let intvalues = strvalues.map{ Int($0)!}
         return intvalues
     } catch {
