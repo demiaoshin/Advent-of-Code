@@ -3,6 +3,7 @@ public struct AoC2022 {
     public private(set) var text = "Hello, World!"
 
     public static func main() {
-        day1().part1and2()
+        day3().part1()
+        day3().part2()
     }
 }
