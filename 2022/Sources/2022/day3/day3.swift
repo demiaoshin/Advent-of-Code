@@ -2,7 +2,7 @@ import Foundation
 import util
 
 class day3 {
-    let file = "/Sources/2022/day3/input.txt"
+    let file = "/Sources/2022/day3/sampleinput.txt"
     let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     var charP = [Character: Int]()
     var rucksacks = [String]()
