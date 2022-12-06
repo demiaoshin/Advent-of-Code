@@ -20,3 +20,9 @@ Day 4: 🌟🌟
 - Set theory came in clutch for this one, definitely going to use it for similar range problems
 - Made use of `isSubset()` to check if a range is in another range
 - Used `intersection()` to check if a range overlaps another range by at least 1 element (if the intersection of 2 sets is not empty, they share at least 1 element)
+
+Day 5: 🌟🌟
+- THIS TOOK ME 2 DAYS ARGHHHHHH
+- PARSING PARSING PARSING
+- dictionaries for the winnnnnnnnnn
+- tried to write a solution that wouldn't be too complicated sigh
