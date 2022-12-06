@@ -16,13 +16,6 @@ class day5 {
         
     }
 
-    // func part2() {
-    //     var mystr = "hellooooooo"
-    //     var letter = Array(mystr)[0]
-
-    //     print(letter)
-    // }
-
     func part1() {
         let rows = data.components(separatedBy: "\n\n")
         var m = rows[0].components(separatedBy: "\n")
