@@ -24,10 +24,8 @@ class day3 {
     func part1() {
         var total = 0
         
-        for n in 0...rucksacks.count-1 {
-            let commonchar = Array(Set(rucksacks[n].prefix(rucksacks[n].count/2)).intersection(Set(rucksacks[n].suffix(rucksacks[n].count/2))))
-
-            total += charP[commonchar[0]]!
+        rucksacks.forEach {
+            total += charP[Array(Set($0.prefix($0.count/2)).intersection(Set($0.suffix($0.count/2))))[0]]!
         }
 
         print("Part 1: \(total)")
