@@ -16,7 +16,7 @@ class day5 {
         
     }
 
-    func part1() {
+    func part1and2() {
         let rows = data.components(separatedBy: "\n\n")
         var m = rows[0].components(separatedBy: "\n")
         var rules = rows[1].components(separatedBy: "\n")
@@ -41,27 +41,19 @@ class day5 {
                     allteams[p] = charar
                     p += 1
                 }
-
-                print(allteams)
             }
         }
 
         for n in 1...9 {
             var charr = allteams[n] ?? []
-            print("current row: \(charr)")
-            let charcount = charr.count
             while charr[0] == " " {
                 charr.removeFirst()
-                print(charr)
             }
             charr.reverse()
             allteams[n] = charr
         }
 
-        print(allteams)
-
         for rule in rules {
-            print(rule)
             var fi = 12
             var ti = 17
 
@@ -70,7 +62,7 @@ class day5 {
 
             var moves: [Character] = [rule[moveindex]]
             
-            var o = String(moves)
+            let o = String(moves)
             var move = Int(o) ?? 0
 
             if rule[moveplusindex] != " " {
@@ -79,7 +71,6 @@ class day5 {
                 moves.append(rule[moveplusindex])
                 let v = String(moves)
                 move = Int(v) ?? 0
-                print(move)
             }
 
             let fromindex = rule.index(rule.startIndex, offsetBy: fi)
@@ -101,10 +92,10 @@ class day5 {
             }
 
             var othertemp = allteams[to] ?? []
+            // comment this out for part 1
             lastItems.reverse()
             othertemp += lastItems
             allteams[to] = othertemp
-            print(allteams)
         }
 
         var answers = [Character]()
