@@ -18,8 +18,7 @@ class day6 {
         var i = 0
 
         while testset.count != 4 {
-            let signal = code.prefix(4)
-            testset = Set(signal)
+            testset = Set(code.prefix(4))
             code.removeFirst()
             i += 1
         }
@@ -33,8 +32,7 @@ class day6 {
         var i = 0
 
         while testset.count != 14 {
-            let signal = code.prefix(14)
-            testset = Set(signal)
+            testset = Set(code.prefix(14))
             code.removeFirst()
             i += 1
         }
