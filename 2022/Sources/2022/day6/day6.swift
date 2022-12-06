@@ -6,7 +6,6 @@ class day6 {
     let file = "/Sources/2022/day6/input.txt"
     var data = [String]()
 
-
     init() {
         let path = FileManager.default.currentDirectoryPath + file
         data = util.getStrInput(path: path)
