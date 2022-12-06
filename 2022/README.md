@@ -26,3 +26,9 @@ Day 5: 🌟🌟
 - PARSING PARSING PARSING
 - dictionaries for the winnnnnnnnnn
 - tried to write a solution that wouldn't be too complicated sigh
+
+Day 6: 🌟🌟
+- another set theory challenge tbh
+- This was soooo much easier tha day 5 LOL
+- took me about 30mins
+- any challenge that has anything to do with checking ranges, or checking that x number of values are different will probably benefit with a set theory approach
